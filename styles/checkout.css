@@ -1,0 +1,158 @@
+.cartDisplay {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--logo-gold);
+    margin: 5vw;
+    border: 5px solid var(--logo-blue);
+    border-radius: 50px;
+}
+
+#cartDisplay p {
+    margin-left: 2.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+#cartDisplay>h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.itemQty {
+    margin: 0 .3rem;
+    font-size: 2rem;
+}
+
+.item {
+    margin: 5% 10%;
+    display: flex;
+    align-items: center;
+}
+
+.item img {
+    width: 15vw;
+    height: 20vw;
+}
+
+.item .itemDescription {
+    padding: 0 2.5vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.item h1 {
+    font-size: 1.5rem;
+    margin: 0 0 2vw 0;
+}
+
+.item h3 {
+    font-size: 1.5rem;
+}
+
+.item .itemSelect {
+    display: flex;
+    height: 3.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item select {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 21vw;
+    height: 11vw;
+}
+
+.item button {
+    font-size: 1.5rem;
+    width: 8vw;
+    height: 8vw;
+    text-align: center;
+    margin-left: 1.25rem;
+    background-color: var(--logo-red);
+}
+
+#checkoutForm {
+    display: flex;
+    flex-direction: column;
+    margin: 5vw;
+    border: solid var(--logo-blue) 5px;
+    padding: 5vw;
+    background-color: var(--logo-gold);
+    border-radius: 25px;
+}
+
+#checkoutForm h1 {
+    font-size: 2rem;
+    margin: 2vw 0;
+}
+
+#checkoutForm label {
+    font-size: 1.2rem;
+    margin-top: 1.5vw;
+}
+
+#checkoutForm input{
+    margin-bottom: 1.5vw;
+    font-size: 1rem;
+}
+
+#reviewOrder {
+    padding: .5rem;
+    margin: 1rem 0;
+    background-color: var(--logo-green);
+}
+
+#checkoutModal {
+    z-index: 1;
+    display: flex;
+    width: 90vw;
+    height: 90vw;
+    margin: 0 4vw;
+    padding: 5vw 0;
+    position: absolute;
+    top: 20vw;
+    left: 0;
+    justify-content: space-evenly;
+    background-color: var(--logo-blue);
+    border: 5px solid var(--logo-gold);
+    border-radius: 5%;
+}
+
+#checkoutModal.hidden {
+    display: none;  
+}
+
+.modalText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: 1.3rem;
+}
+
+.modalText input {
+    background-color: var(--logo-green);
+    padding: 1rem;
+    width: 100%;
+}
+
+#modalToggle {
+    font-size: 1.7rem;
+    height: 7vw;
+    width: 7vw;
+    text-align: center;
+    align-content: center;
+}

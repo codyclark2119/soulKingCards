@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul King Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/checkout.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img class="logo" src="/images/logo/Soul_King_Cards.png" alt="Soul King Cards Logo" srcset="">
+            </div>
+            <div class="navbar-toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a href="/">Cards</a></li>
+            <li><a href="/checkout.html">Checkout</a></li>
+        </ul>
+    </header>
+
+    <main class="cartDisplay" id="cartDisplay">
+        <h1>No Items in Cart!</h1>
+    </main>
+
+    <aside class="checkout">
+        <form action="" method="post" id="checkoutForm">
+            <h1>Order Details</h1>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="nameForm">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="addressForm">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="emailForm">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" name="phoneNumber" id="phoneNumberForm">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" name="cardNumber" id="cardNumberForm">
+            <label for="cardExp">Card Exp</label>
+            <input type="month" name="cardExp" id="cardExpForm">
+            <label for="cardCvv">Card CVV</label>
+            <input type="text" name="cardCvv" id="cardCvvForm">
+            <input type="button" value="Review Order" id="reviewOrder">
+        </form>
+    </aside>
+    <div id="checkoutModal" class="hidden">
+        <div class="modalText">
+            <input type="button" value="Submit Order">
+
+        </div>
+        <div class="modalToggle" id="modalToggle">
+            X
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/checkout.js"></script>
+</body>
+
+</html>

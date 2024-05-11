@@ -1,0 +1,139 @@
+/* Global */
+@property --logo-red {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #ff2353;
+}
+
+@property --logo-blue {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #0066b5;
+}
+
+@property --logo-gold {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #FDDB70;
+}
+
+@property --logo-green {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #62D147;
+}
+
+@keyframes dissolve {
+    from {opacity: 100;}
+    to {opacity: 0%;}
+}
+
+body {
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: var(--logo-red);
+}
+
+header {
+    background-color: var(--logo-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    border-bottom: 1.2vw solid var(--logo-gold);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    order: 1;
+    /* Ensure brand is on the left */
+}
+
+.logo {
+    margin: 0 2vw;
+    height: 6vw;
+    width: 10vw;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    order: 3;
+}
+
+.navbar-toggle span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    order: 2;
+    margin: 0;
+    font-size: 1.5vw;
+}
+
+.navbar-links li {
+    margin-right: 20px;
+    padding: 0 1.5vw;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: var(--logo-gold);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        order: 3;
+        padding: 10px 20px;
+        font-size: 1.5rem;
+    }
+
+    .navbar-links li {
+        padding: 15px 0;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* Align links to the left */
+    }
+
+    .navbar-toggle {
+        display: flex;
+        margin: 0 4vw;
+    }
+
+    .navbar-brand {
+        order: 1;
+    }
+
+    .logo {
+        margin: 0;
+        height: 15vw;
+        width: 25vw;
+    }
+}

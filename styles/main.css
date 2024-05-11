@@ -1,0 +1,252 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Searchbar */
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 4vw 0;
+    height: 6vw;
+    width: 50vw;
+    background-color: var(--logo-gold);
+    align-items: center;
+    border-radius: 20px;
+    border: 5px solid var(--logo-blue);
+}
+
+.search input {
+    width: 70%;
+    height: 3vw;
+    font-size: 1.5rem;
+    padding: 0 15px;
+}
+
+.search button {
+    background-color: var(--logo-blue);
+    width: 4vw;
+    height: 3vw;
+    margin: 0 1.5vw;
+    font-size: 2.5rem;
+}
+
+.itemDisplay {
+    display: flex;
+    max-width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--logo-gold);
+    border-radius: 50px;
+    padding: 2vw;
+    align-content: center;
+    border: 5px solid var(--logo-blue);
+}
+
+.item {
+    margin: 3%;
+}
+
+.item img {
+    width: 11vw;
+    height: 15vw;
+}
+
+.item .itemDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.item .itemText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item h1 {
+    font-size: 1.5vw;
+    padding: .5vw 0;
+}
+
+.item h3 {
+    font-size: 1.2vw;
+}
+
+.item .itemSelect {
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+}
+
+.item select {
+    font-size: 1rem;
+    width: 4rem;
+    text-align: center;
+}
+
+.item button {
+    font-size: 1.25rem;
+    width: 3rem;
+    text-align: center;
+    margin: 0 .25rem;
+}
+
+#cardModal {
+    z-index: 2;
+    display: flex;
+    width: 88vw;
+    margin: 0 6vw;
+    padding: 7vw 0;
+    position: absolute;
+    top: 25vw;
+    left: 0;
+    justify-content: space-evenly;
+    background-color: var(--logo-red);
+    border: 5px solid var(--logo-blue);
+    border-radius: 15px;
+}
+
+#cardModal.hidden {
+    display: none;  
+}
+
+#cardModal.animate {
+    animation-name: dissolve;
+    animation-duration: 2s;
+}
+
+#cardModal .modalText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+#cardModal .modalPrimaryText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+#cardModal .modalSecondaryText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+#cardModal .modalSecondaryText p {
+    margin: .5rem 0;
+}
+
+.itemSelect {
+    width: 90%;
+    height: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.itemSelect select {
+    height: 100%;
+    width: 40%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.itemSelect button.addToCart {
+    height: 100%;
+    width: 3rem;
+    font-size: 1rem;
+    background-color: var(--logo-green);
+}
+
+#cardModal .modalImg {
+    width: 30vw;
+    height: 40vw;
+}
+
+.modalToggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .search {
+        height: 20vw;
+        width: 90vw;
+    }
+
+    .search input {
+        width: 80%;
+        height: 13vw;
+    }
+
+    .search button {
+        width: 10vw;
+        height: 13vw;
+        margin: 0 0.5vw;
+        font-size: 2.5rem;
+    }
+
+    .item {
+        width: 80%;
+        margin: 5% 10%;
+        display: flex;
+    }
+
+    .item .itemText {
+        justify-content: space-evenly;
+    }
+
+    .item img {
+        width: 30%;
+        height: 25%;
+    }
+
+    .item .itemDescription {
+        justify-content: space-between;
+        padding: 0 2.5rem;
+    }
+
+    .item h1 {
+        font-size: 1.5rem;
+    }
+    
+    .item h3 {
+        font-size: 1.3rem;
+    }
+
+    .item .itemSelect {
+        display: flex;
+        height: 3.5rem;
+        justify-content: flex-start;
+
+    }
+
+    .item select {
+        font-size: 1.5rem;
+        width: 5rem;
+        text-align: center;
+    }
+    
+    .item button {
+        font-size: 1.5rem;
+        width: 3.5rem;
+        text-align: center;
+        margin: 0 .25rem;
+    }
+}
